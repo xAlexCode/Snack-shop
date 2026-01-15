@@ -1,7 +1,7 @@
 const shopitems = [
 
     {name: 'Läsk', price: 15 },
-    {name: 'Chips', price: 20 },
+    {name: 'Chips', price: 30 },
     {name: 'Choklad', price: 25 }
 ];
 
@@ -31,7 +31,7 @@ function sortName() {
 }
 
 function sortPrice() {
-    sortShopItems.sort((item1, item2) => item1.price + item2.price);
+    sortShopItems.sort((item1, item2) => item1.price - item2.price);
     printItems();
 }
 
